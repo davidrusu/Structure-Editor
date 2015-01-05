@@ -1,0 +1,251 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+  <span class="node nest0 root">
+    <span class="keyword">import</span>
+    <span class="node nest">Data.Char</span>
+  </span>
+  <br>
+  <span class="node nest0 root">
+    <span class="node type nest1">
+      <span class="node nest0 func">filter</span>
+      <span class="keyword">::</span>
+      <span class="node nest0">
+        <span class="node nest1">
+          (
+          <span class="node nest0">a</span>
+          <span class="keyword">-&gt;</span>
+          <span class="node nest0 data">Bool</span>
+          )
+        </span>
+        <span class="keyword">-&gt;</span>
+        <span class="node nest1">
+          [<span class="node nest0">a</span>]
+        </span>
+        <span class="keyword">-&gt;</span>
+        <span class="node nest1">
+          [<span class="node nest0">a</span>]
+        </span>
+      </span>
+    </span>
+    <br>
+    <span class="node function nest1">
+      <span class="node nest0 func">filter</span>
+      <span class="node nest0">_</span>
+      <span class="node nest0">[]</span>
+      =
+      <span class="node nest0">[]</span>
+    </span>
+    <br>
+    <span class="node function nest1">
+      <span class="node nest0 func">filter</span>
+      <span class="node nest0">f</span>
+      <span class="node nest0">
+        (
+        <span class="node nest1">x</span>
+        <span class="data">:</span>
+        <span class="node nest1">xs</span>
+        )
+      </span>
+      =
+      <span class="node nest0">
+        <span class="keyword">case</span>
+        <span class="node nest1">
+          <span class="node nest0">f</span>
+          <span class="node nest0">x</span>
+        </span>
+        <span class="keyword">of</span>
+        <br>
+        <span class="node nest1 indent">
+          <span class="node nest0">
+            <span class="node nest1 data">True</span>
+            <span class="keyword">-&gt;</span>
+            <span class="node nest1">
+              <span class="node nest0">x</span>
+              <span class="data">:</span>
+              <span class="node nest0">
+                (
+                <span class="node nest1">filter</span>
+                <span class="node nest1">f</span>
+                <span class="node nest1">xs</span>
+                )
+              </span>
+            </span>
+          </span>
+          <br>
+          <span class="node nest0">
+            <span class="node nest1 data">False</span>
+            <span class="keyword">-&gt;</span>
+            <span class="node nest1">
+              <span class="node nest0">filter</span>
+              <span class="node nest0">f</span>
+              <span class="node nest0">xs</span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="node nest0 root">
+    <span class="node type nest1">
+      <span class="node nest0 func">map</span>
+      <span class="keyword">::</span>
+      <span class="node nest0">
+        <span class="node nest1">
+          (
+          <span class="node nest0">
+            a
+          </span>
+          <span class="keyword">-&gt;</span>
+          <span class="node nest0">
+            b
+          </span>
+          )
+        </span>
+        <span class="keyword">-&gt;</span>
+        <span class="node nest1">
+          [
+          <span class="node nest0">
+            a
+          </span>
+          ]
+        </span>
+        <span class="keyword">-&gt;</span>
+        <span class="node nest1">
+          [<span class="node nest0">b</span>]
+        </span>
+      </span>
+    </span>
+    <br>
+    <span class="node function nest1">
+      <span class="node nest0 func">map</span>
+      <span class="node nest0">_</span>
+      <span class="node nest0">[]</span>
+      =
+      <span class="node nest0">[]</span>
+    </span>
+    <br>
+    <span class="node function nest1">
+      <span class="node nest0 func">map</span>
+      <span class="node nest0">f</span>
+      <span class="node nest0">
+        (
+        <span class="node nest1">
+          x
+        </span>
+        <span class="data">:</span>
+        <span class="node nest1">
+          xs
+        </span>
+        )
+      </span>
+      =
+      <span class="node nest0">
+        <span class="node nest1">
+          <span class="node nest0">f</span>
+          <span class="node nest0">x</span>
+        </span>
+        <span class="data">:</span>
+        <span class="node nest1">
+          <span class="node nest1">map</span>
+          <span class="node nest1">f</span>
+          <span class="node nest1">xs</span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="node nest0 root">
+    <span class="node type nest1">
+      <span class="node nest0 func">main</span>
+      <span class="keyword">::</span>
+      <span class="node nest0">
+        IO
+        <span class="node nest0">()</span>
+      </span>
+    </span>
+    <br>
+    <span class="node function nest1">
+      <span class="node nest0 func">main</span>
+      =
+      <span class="node nest0">
+        <span class="keyword">do</span>
+        <span class="node nest1">
+          <span class="node nest0">
+            <span class="node nest1">input</span>
+            <span class="keyword">&lt;-</span>
+            <span class="node nest1">getLine</span>
+          </span>
+          <br>
+          <span class="node nest0">
+            <span class="keyword">let</span>
+            <span class="node nest1">upCase</span>
+            =
+            <span class="node nest1">
+              <span class="node nest0">map</span>
+              <span class="node nest0">toUpper</span>
+              <span class="node nest0">input</span>
+            </span>
+          </span>
+          <br>
+          <span class="node nest0">
+            <span class="node nest1">putStrLn</span>
+            <span class="node nest1">upCase</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  <span class="node nest0 root">
+    <span class="node type nest1">
+      <span class="node nest0 func">filter'</span>
+      <span class="keyword">::</span>
+      <span class="node nest0">
+        <span class="node nest1">
+          (
+          <span class="node nest0">a</span>
+          <span class="keyword">-&gt;</span>
+          <span class="node nest0 data">Bool</span>
+          )
+        </span>
+        <span class="keyword">-&gt;</span>
+        <span class="node nest1">
+          [<span class="node nest0">a</span>]
+        </span>
+        <span class="keyword">-&gt;</span>
+        <span class="node nest1">
+          [<span class="node nest0">a</span>]
+        </span>
+      </span>
+    </span>
+    <br>
+    <span class="node function nest1">
+      <span class="node nest0 func">filter'</span>
+      <span class="node nest0">f</span>
+      <span class="node nest0">
+        xs
+      </span>
+      = 
+      <span class="node nest0">
+        foldr decider [] xs
+        <br/>
+        <span class="node nest1">
+          <span class="keyword">where</span>
+          <br/>
+          <span class="node nest0 indent">
+            <span class="func">decider</span> x a =
+            <span class="keyword">if</span> f x
+            <span class="keyword">then</span> 
+            x
+            <span class="data">:</span>
+            a
+            <span class="keyword">else</span>
+            a
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</body>
+</html>

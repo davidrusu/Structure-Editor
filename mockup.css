@@ -1,0 +1,64 @@
+body {
+    background-color: #cca;
+    color: black;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.root {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 2px;
+    border-radius: 8px;
+}
+
+.func {
+    color: green;
+}
+.data {
+    color: #cc1100;
+}
+.keyword {
+    color: #cc5500;
+}
+.nest0 {
+
+}
+.nest1 {
+
+}
+
+.nest2 {
+    background-color: #333311;
+}
+
+.nest3 {
+    background-color: #222200;
+}
+
+.nest4 {
+    background-color: #151100;
+}
+
+.nest5 {
+    background-color: #051005;
+}
+
+.nest6 {
+    background-color: #000510;
+}
+.nest7 {
+    background-color: #000000;
+}
+
+.node {
+    vertical-align: top;
+    border: solid rgba(0, 0, 0, 0) 1px;
+    display: inline-block;
+}
+
+.indent {
+    padding-left: 20px;
+}
+
+.type {
+    opacity: 1;
+}
