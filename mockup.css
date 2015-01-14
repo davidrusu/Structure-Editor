@@ -51,7 +51,8 @@ body {
 
 .node {
     vertical-align: top;
-    border: solid rgba(0, 0, 0, 0) 1px;
+    background-color: rgba(255,255,255,0.1);
+    border: solid rgba(0, 0, 0, 0.1) 0px;
     display: inline-block;
 }
 

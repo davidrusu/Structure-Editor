@@ -41,3 +41,6 @@ Typed : What's Visible
 
 ## Type Checking
 - 
+
+
+##Phases
