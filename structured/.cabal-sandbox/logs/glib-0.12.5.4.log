@@ -1,8 +1,0 @@
-[1 of 2] Compiling SetupWrapper     ( /tmp/glib-0.12.5.4-13790/glib-0.12.5.4/SetupWrapper.hs, /tmp/glib-0.12.5.4-13790/glib-0.12.5.4/dist/dist-sandbox-1a5ecc2d/setup/SetupWrapper.o )
-[2 of 2] Compiling Main             ( /tmp/glib-0.12.5.4-13790/glib-0.12.5.4/dist/dist-sandbox-1a5ecc2d/setup/setup.hs, /tmp/glib-0.12.5.4-13790/glib-0.12.5.4/dist/dist-sandbox-1a5ecc2d/setup/Main.o )
-Linking /tmp/glib-0.12.5.4-13790/glib-0.12.5.4/dist/dist-sandbox-1a5ecc2d/setup/setup ...
-[1 of 2] Compiling Gtk2HsSetup      ( Gtk2HsSetup.hs, dist/setup-wrapper/Gtk2HsSetup.o )
-[2 of 2] Compiling Main             ( SetupMain.hs, dist/setup-wrapper/Main.o )
-Linking dist/setup-wrapper/setup ...
-Cannot find gtk2hsC2hs
-Please install `gtk2hs-buildtools` first and check that the install directory is in your PATH (e.g. HOME/.cabal/bin).

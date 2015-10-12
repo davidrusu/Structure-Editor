@@ -8,6 +8,7 @@ body {
     background-color: rgba(255, 255, 255, 1);
     margin: 2px;
     border-radius: 8px;
+    border: 1px solid black;
 }
 
 .func {
@@ -51,9 +52,15 @@ body {
 
 .node {
     vertical-align: top;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0);
     border: solid rgba(0, 0, 0, 0.1) 0px;
     display: inline-block;
+    border: 1px solid rgba(255,255,255,0);
+}
+
+.node:hover {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,1);
 }
 
 .indent {

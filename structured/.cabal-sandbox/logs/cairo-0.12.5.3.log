@@ -1,8 +1,0 @@
-[1 of 2] Compiling SetupWrapper     ( /tmp/cairo-0.12.5.3-13790/cairo-0.12.5.3/SetupWrapper.hs, /tmp/cairo-0.12.5.3-13790/cairo-0.12.5.3/dist/dist-sandbox-1a5ecc2d/setup/SetupWrapper.o )
-[2 of 2] Compiling Main             ( /tmp/cairo-0.12.5.3-13790/cairo-0.12.5.3/dist/dist-sandbox-1a5ecc2d/setup/setup.hs, /tmp/cairo-0.12.5.3-13790/cairo-0.12.5.3/dist/dist-sandbox-1a5ecc2d/setup/Main.o )
-Linking /tmp/cairo-0.12.5.3-13790/cairo-0.12.5.3/dist/dist-sandbox-1a5ecc2d/setup/setup ...
-[1 of 2] Compiling Gtk2HsSetup      ( Gtk2HsSetup.hs, dist/setup-wrapper/Gtk2HsSetup.o )
-[2 of 2] Compiling Main             ( SetupMain.hs, dist/setup-wrapper/Main.o )
-Linking dist/setup-wrapper/setup ...
-Cannot find gtk2hsC2hs
-Please install `gtk2hs-buildtools` first and check that the install directory is in your PATH (e.g. HOME/.cabal/bin).
