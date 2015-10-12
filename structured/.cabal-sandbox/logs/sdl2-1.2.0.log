@@ -1,3 +1,0 @@
-Configuring sdl2-1.2.0...
-setup-Simple-Cabal-1.16.0-x86_64-linux-ghc-7.6.3: The pkg-config package sdl2
-version >=2.0.3 is required but it could not be found.
